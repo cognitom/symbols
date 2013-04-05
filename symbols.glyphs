@@ -799,6 +799,7 @@ width = 1792;
 unicode = F73F;
 }
 );
+gridLength = 64;
 instances = (
 {
 name = Regular;
