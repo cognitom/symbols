@@ -17,11 +17,10 @@ This is a template file to create a font on [Glyphs mini](https://itunes.apple.c
 - 1792 x 1792 px : identical to the Illustrator template above.
 - U+F700 ~ U+F73F are already assigned. These unicode numbers are in PUA (Private User Area).
 
-## How to use these?
+## How to use?
 
 0. Create symbols on Illustrator with **symbols.ai** template.
 0. Copy vector image and paste into **symbols.glyphs**.
-0. Change your font name and so on.
 0. Export as OTF from Glyphs mini.
-0. Convert OTF to each web font formats. See [@font-face kit generator](http://fontface.codeandmore.com/indexnew.php).
-0. 
+0. Convert OTF to webfont formats. See [@font-face kit generator](http://fontface.codeandmore.com/indexnew.php).
+0. Rewrite **symbols.css** as you like :-)
