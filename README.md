@@ -3,8 +3,7 @@ Symbols
 
 The Template of Symbol Fonts for Web.
 
-![Illustrator](images/illustrator.png)
-![Glyphs mini](images/glyphs_mini.png)
+![Illustrator](images/illustrator.png) &nbsp; ![Glyphs mini](images/glyphs_mini.png)
 
 ## symbols.ai
 This is a template file to create symbols (icons) on Illustrator CS6.
