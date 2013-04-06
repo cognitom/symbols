@@ -8,72 +8,88 @@
 		font-weight: normal;
 		font-style: normal;
 }
-.symbol {
-  font-style:normal;
+s {
+  font-size: 14px;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: normal;
   font-family: 'Symbols-Regular';
+  line-height: normal;
+  vertical-align: baseline;
 }
-/* It would be better to change below like ".symbol.Book" or ".symbol.Person". */
-.symbol.00:before { content: "\f700" }
-.symbol.01:before { content: "\f701" }
-.symbol.02:before { content: "\f702" }
-.symbol.03:before { content: "\f703" }
-.symbol.04:before { content: "\f704" }
-.symbol.05:before { content: "\f705" }
-.symbol.06:before { content: "\f706" }
-.symbol.07:before { content: "\f707" }
-.symbol.08:before { content: "\f708" }
-.symbol.09:before { content: "\f709" }
-.symbol.0a:before { content: "\f70a" }
-.symbol.0b:before { content: "\f70b" }
-.symbol.0c:before { content: "\f70c" }
-.symbol.0d:before { content: "\f70d" }
-.symbol.0e:before { content: "\f70e" }
-.symbol.0f:before { content: "\f70f" }
-.symbol.10:before { content: "\f710" }
-.symbol.11:before { content: "\f711" }
-.symbol.12:before { content: "\f712" }
-.symbol.13:before { content: "\f713" }
-.symbol.14:before { content: "\f714" }
-.symbol.15:before { content: "\f715" }
-.symbol.16:before { content: "\f716" }
-.symbol.17:before { content: "\f717" }
-.symbol.18:before { content: "\f718" }
-.symbol.19:before { content: "\f719" }
-.symbol.1a:before { content: "\f71a" }
-.symbol.1b:before { content: "\f71b" }
-.symbol.1c:before { content: "\f71c" }
-.symbol.1d:before { content: "\f71d" }
-.symbol.1e:before { content: "\f71e" }
-.symbol.1f:before { content: "\f71f" }
-.symbol.20:before { content: "\f720" }
-.symbol.21:before { content: "\f721" }
-.symbol.22:before { content: "\f722" }
-.symbol.23:before { content: "\f723" }
-.symbol.24:before { content: "\f724" }
-.symbol.25:before { content: "\f725" }
-.symbol.26:before { content: "\f726" }
-.symbol.27:before { content: "\f727" }
-.symbol.28:before { content: "\f728" }
-.symbol.29:before { content: "\f729" }
-.symbol.2a:before { content: "\f72a" }
-.symbol.2b:before { content: "\f72b" }
-.symbol.2c:before { content: "\f72c" }
-.symbol.2d:before { content: "\f72d" }
-.symbol.2e:before { content: "\f72e" }
-.symbol.2f:before { content: "\f72f" }
-.symbol.30:before { content: "\f730" }
-.symbol.31:before { content: "\f731" }
-.symbol.32:before { content: "\f732" }
-.symbol.33:before { content: "\f733" }
-.symbol.34:before { content: "\f734" }
-.symbol.35:before { content: "\f735" }
-.symbol.36:before { content: "\f736" }
-.symbol.37:before { content: "\f737" }
-.symbol.38:before { content: "\f738" }
-.symbol.39:before { content: "\f739" }
-.symbol.3a:before { content: "\f73a" }
-.symbol.3b:before { content: "\f73b" }
-.symbol.3c:before { content: "\f73c" }
-.symbol.3d:before { content: "\f73d" }
-.symbol.3e:before { content: "\f73e" }
-.symbol.3f:before { content: "\f73f" }
+s.x2 { font-size:2em }
+s.x3 { font-size:3em }
+s.x4 { font-size:4em }
+
+/* It would be better to change below like "s.Book" or "s.Person". */
+s.f700:before { content: "\f700" }
+s.f701:before { content: "\f701" }
+s.f702:before { content: "\f702" }
+s.f703:before { content: "\f703" }
+s.f704:before { content: "\f704" }
+s.f705:before { content: "\f705" }
+s.f706:before { content: "\f706" }
+s.f707:before { content: "\f707" }
+
+s.f708:before { content: "\f708" }
+s.f709:before { content: "\f709" }
+s.f70a:before { content: "\f70a" }
+s.f70b:before { content: "\f70b" }
+s.f70c:before { content: "\f70c" }
+s.f70d:before { content: "\f70d" }
+s.f70e:before { content: "\f70e" }
+s.f70f:before { content: "\f70f" }
+
+s.f710:before { content: "\f710" }
+s.f711:before { content: "\f711" }
+s.f712:before { content: "\f712" }
+s.f713:before { content: "\f713" }
+s.f714:before { content: "\f714" }
+s.f715:before { content: "\f715" }
+s.f716:before { content: "\f716" }
+s.f717:before { content: "\f717" }
+
+s.f718:before { content: "\f718" }
+s.f719:before { content: "\f719" }
+s.f71a:before { content: "\f71a" }
+s.f71b:before { content: "\f71b" }
+s.f71c:before { content: "\f71c" }
+s.f71d:before { content: "\f71d" }
+s.f71e:before { content: "\f71e" }
+s.f71f:before { content: "\f71f" }
+
+s.f720:before { content: "\f720" }
+s.f721:before { content: "\f721" }
+s.f722:before { content: "\f722" }
+s.f723:before { content: "\f723" }
+s.f724:before { content: "\f724" }
+s.f725:before { content: "\f725" }
+s.f726:before { content: "\f726" }
+s.f727:before { content: "\f727" }
+
+s.f728:before { content: "\f728" }
+s.f729:before { content: "\f729" }
+s.f72a:before { content: "\f72a" }
+s.f72b:before { content: "\f72b" }
+s.f72c:before { content: "\f72c" }
+s.f72d:before { content: "\f72d" }
+s.f72e:before { content: "\f72e" }
+s.f72f:before { content: "\f72f" }
+
+s.f730:before { content: "\f730" }
+s.f731:before { content: "\f731" }
+s.f732:before { content: "\f732" }
+s.f733:before { content: "\f733" }
+s.f734:before { content: "\f734" }
+s.f735:before { content: "\f735" }
+s.f736:before { content: "\f736" }
+s.f737:before { content: "\f737" }
+
+s.f738:before { content: "\f738" }
+s.f739:before { content: "\f739" }
+s.f73a:before { content: "\f73a" }
+s.f73b:before { content: "\f73b" }
+s.f73c:before { content: "\f73c" }
+s.f73d:before { content: "\f73d" }
+s.f73e:before { content: "\f73e" }
+s.f73f:before { content: "\f73f" }
