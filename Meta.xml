@@ -1,0 +1,28 @@
+<!-- This meta file is needed to make WOFF. -->
+<!-- 1. Replace Your Company with your company name. -->
+<!-- 2. Replace Designer Name with your name. -->
+<!-- 3. Replace the URLs. -->
+<!-- 4. Check the license. You can choose another. -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata version="1.0">
+  <uniqueid id="com.yourcompany.Symbols.rev1"/>
+  <vendor name="Your Company" url="https://yourcompany.com"/>
+  <credits>
+    <credit name="[Your Name]" role="Design"/>
+    <credit name="Tsutomu Kawamura" url="https://github.com/cognitom/symbols" role="Webfont Template"/>
+  </credits>
+  <description>
+    <text lang="en">A Symbol Font for the Web</text>
+  </description>
+  <license url="http://scripts.sil.org/OFL" id="OFL1.1">
+    <text lang="en">
+    Copyright (c) 2013, [Your Name] ([http://yourcompany.com]), with Reserved Font Name [Your Font Name].	      
+    This Font Software is licensed under the SIL Open Font License, Version 1.1.
+    This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+    </text>
+  </license>
+  <copyright>
+    <text lang="en">2013 [Your Name]</text>
+  </copyright>
+</metadata>
