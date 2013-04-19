@@ -19,6 +19,7 @@ This is a template file to create a font on [Glyphs mini](https://itunes.apple.c
 
 ## How to use?
 
+0. [Download this repo](https://github.com/cognitom/symbols/archive/master.zip).
 0. Create symbols on Illustrator with **symbols.ai** template.
 0. Copy vector image and paste into **symbols.glyphs**.
 0. Export the font to "**fonts**" directory as OTF from Glyphs mini.
