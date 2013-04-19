@@ -1,14 +1,14 @@
 @font-face {
 		font-family: 'Symbols-Regular';
-		src: url('symbolsregular.eot');
-		src: url('symbolsregular.eot?#iefix') format('embedded-opentype'),
-				 url('symbolsregular.woff') format('woff'),
-				 url('symbolsregular.ttf') format('truetype'),
-				 url('symbolsregular.svg#symbolsregular') format('svg');
+		src: url('../fonts/Symbols-Regular.eot');
+		src: url('../fonts/Symbols-Regular.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/Symbols-Regular.woff') format('woff'),
+				 url('../fonts/Symbols-Regular.ttf') format('truetype'),
+				 url('../fonts/Symbols-Regular.svg#Symbols-Regular') format('svg');
 		font-weight: normal;
 		font-style: normal;
 }
-s {
+s,.symbols {
   font-size: 14px;
   font-style: normal;
   text-decoration: none;
@@ -17,9 +17,14 @@ s {
   line-height: normal;
   vertical-align: baseline;
 }
-s.x2 { font-size:2em }
-s.x3 { font-size:3em }
-s.x4 { font-size:4em }
+s {
+  /* fix vertical position of the font created by Glyphs app. */
+  display:inline-block;
+  margin-top:-.2em;
+}
+s.x2,.symbols.x2 { font-size:2em }
+s.x3,.symbols.x3 { font-size:3em }
+s.x4,.symbols.x4 { font-size:4em }
 
 /* It would be better to change below like "s.Book" or "s.Person". */
 s.f700:before { content: "\f700" }
