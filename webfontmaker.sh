@@ -1,10 +1,17 @@
+# THIS SCRPT WAS ORIGINALLY CREATED BY MEKKABLUE,
+# AND LITTLE BIT MODIFIED BY COGNITOM
+# https://github.com/mekkablue/webfontmaker
+
+# Fonts directory is...
+fontdir="fonts"
+
 # Syntax: sh webfontmaker.sh [x.xxx]
 # x.xxx is an optional version number
 
 # Remove files from previous iterations:
-rm *.eot
-rm *.ttf
-rm *.svg
+rm $fontdir/*.eot
+rm $fontdir/*.ttf
+rm $fontdir/*.svg
 
 # Check if a version number was passed as argument:
 if [[ $1 ]]; then
@@ -22,20 +29,18 @@ sed 's/x.xxx/$version/' $metadataSRC > $metadata
 
 # Create the fontforge script for later,
 # unfortunately, fontforge -c seems to be broken...?
-printf 'Open($1)¥nGenerate($1:r + ".svg")¥nScaleToEm(2048)¥nRoundToInt()¥nGenerate($1:r + ".ttf")' > makeweb.pe
+printf 'Open($1)\nGenerate($1:r + ".svg")\nScaleToEm(2048)\nRoundToInt()\nGenerate($1:r + ".ttf")' > makeweb.pe
 
 
 # Process all OTFs in the folder:
-for file in *.otf; do
+for file in $fontdir/*.otf; do
 	
 	# Strip the ".otf" extension
 	# and calculate the other names:
-	basename=`echo "$file" | sed -e "s/¥.otf//"`
+	basename=`echo "$file" | sed -e "s/\.otf//"`
 	otfFont="$basename.otf"
 	ttfFont="$basename.ttf"
 	eotFont="$basename.eot"
-	ttfAHFont="$basename-autohinted.ttf"
-	eotAHFont="$basename-autohinted.eot"
 	woffFont="$basename.woff"
 	svgFont="$basename.svg"
 
@@ -51,18 +56,12 @@ for file in *.otf; do
 	echo
 	echo Fixing $svgFont ...
 	sed '/^Created by .*$/d' $svgFont > tmp.svg; mv tmp.svg $svgFont
-	sed 's/^<svg>/<svg xmlns="http:¥/¥/www.w3.org¥/2000¥/svg">/' $svgFont > tmp.svg; mv tmp.svg $svgFont
-	
-	# Autohint TTF:
-	echo
-	echo Creating $ttfAHFont ...
-	ttfautohint $ttfFont $ttfAHFont
+	sed 's/^<svg>/<svg xmlns="http:\/\/www.w3.org\/2000\/svg">/' $svgFont > tmp.svg; mv tmp.svg $svgFont
 	
 	# Make EOT:
 	echo
-	echo Creating $eotFont and $eotAHFont ...
+	echo Creating $eotFont ...
 	java -jar /Applications/sfntly/java/dist/tools/sfnttool/sfnttool.jar -e -x $ttfFont $eotFont
-	java -jar /Applications/sfntly/java/dist/tools/sfnttool/sfnttool.jar -e -x $ttfAHFont $eotAHFont
 
 	# Make WOFF:
 	echo
