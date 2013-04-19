@@ -21,6 +21,21 @@ This is a template file to create a font on [Glyphs mini](https://itunes.apple.c
 
 0. Create symbols on Illustrator with **symbols.ai** template.
 0. Copy vector image and paste into **symbols.glyphs**.
-0. Export as OTF from Glyphs mini.
-0. Convert OTF to webfont formats. See [@font-face kit generator](http://fontface.codeandmore.com/indexnew.php).
+0. Export the font to "**fonts**" directory as OTF from Glyphs mini.
+0. Convert OTF to webfont formats. See [@font-face kit generator](http://fontface.codeandmore.com/indexnew.php). Put your converted fonts into "**fonts**" directory.
+0. Check your font exported correctly. See **test.html**.
 0. Rewrite **symbols.css** as you like :-)
+
+## Advanced
+You can generate webfonts locally. After you export the font as OTF, try following.
+
+0. If you haven't install FontForge and other tools, install these software. See [the instruction written by mekkablue](https://github.com/mekkablue/webfontmaker).
+0. Modify **Meta.xml** to add your license information.
+0. Go to the directory of your repo. ```cd your/repository```
+0. Execute this script. ```sh webfontmaker.sh``` Then webfont files will be automatically created in "fonts" sub directory.
+
+
+## Appendix
+```webfontmaker.sh``` is originally created by [mekkablue](https://github.com/mekkablue). See more detail here…
+
+* https://github.com/mekkablue/webfontmaker
