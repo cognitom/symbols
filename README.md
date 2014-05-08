@@ -3,6 +3,9 @@ Symbols
 
 The Template of Symbol Fonts for Web.
 
+**Caution: This repo is not maintained. [Symbols for Sketch](https://github.com/cognitom/symbols-for-sketch) has been released. Check it out!**
+
+
 ![Illustrator](images/illustrator.png) &nbsp; ![Glyphs mini](images/glyphs_mini.png)
 
 ## symbols.ai
